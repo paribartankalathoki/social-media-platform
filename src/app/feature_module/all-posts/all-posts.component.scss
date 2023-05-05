@@ -6,12 +6,17 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.social-sharing img {
+.social-sharing img.avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   float: left;
   margin-right: 20px;
+}
+
+img.postImages {
+  width: 100px;
+  height: 100px;
 }
 
 .post-header {

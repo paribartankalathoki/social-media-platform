@@ -1,6 +1,6 @@
 <div class="all-posts" *ngIf="Object.values(allPosts)?.length">
   <div class="social-sharing posts-list mt-4" *ngFor="let post of Object.values(allPosts)">
-    <img src="assets/user-avatar.png" alt="Profile Picture">
+    <img class="avatar" src="assets/user-avatar.png" alt="Profile Picture">
     <div class="row">
       <div class="col-md-12">
         <div class="post-header">
@@ -16,6 +16,12 @@
         <p class="text-justify">
           {{post?.description}}
         </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center" *ngFor="let d of post?.postImages">
+        <img class="postImages" [src]="d" height="200" alt="Post Images">
       </div>
     </div>
     <div class="row">
